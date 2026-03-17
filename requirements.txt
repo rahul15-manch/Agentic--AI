@@ -4,3 +4,7 @@ uvicorn
 sqlalchemy 
 passlib[bcrypt] 
 python-jose
+langchain 
+python-dotenv
+langchain_community 
+pypdf
