@@ -14,12 +14,12 @@ os.environ["GOOGLE_API_KEY"] = os.getenv("GEMINI_API_KEY")
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 
-# Create Gemini model
+
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash"
 )
 
-# Prompt Template
+
 prompt = ChatPromptTemplate.from_messages(
     [
         ("system", "You are a helpful assistant. Please respond to user queries."),
@@ -27,13 +27,13 @@ prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-# Output Parser
+
 output_parser = StrOutputParser()
 
-# Chain
+
 chain = prompt | llm | output_parser
 
-# Streamlit UI
+
 st.title("Chat with Gemini")
 
 input_text = st.text_input("Search topic you want")

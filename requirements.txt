@@ -8,3 +8,8 @@ langchain
 python-dotenv
 langchain_community 
 pypdf
+streamlit 
+dotenv
+langchain_google_genai
+langserve
+sse_starlette
