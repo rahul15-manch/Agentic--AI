@@ -1,4 +1,6 @@
 import Kgbutton  from"./kgbutton";
+import Hello from "./Hello"
+
 function App(){
 
   return <div>
@@ -7,6 +9,10 @@ function App(){
    <Kgbutton>
     this is a kgbutton
    </Kgbutton>
+   <Hello>
+    </Hello>
+
+
    </div>
 }
 export default App;
